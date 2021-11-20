@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Home",
+    "isTitle": true,
+    "icon": null,
+    "link": null
+  },
+  {
+    "label": "Dashboard",
+    "isTitle":  false,
+    "icon": "activity-round",
+    "link": "/"
+  }
+]

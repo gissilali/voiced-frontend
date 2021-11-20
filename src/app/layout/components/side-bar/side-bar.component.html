@@ -1,0 +1,15 @@
+<div class="nk-sidebar-element">
+  <div class="nk-sidebar-content">
+    <div class="nk-sidebar-menu" data-simplebar>
+      <ul class="nk-menu">
+        <li [class.nk-menu-heading]="menuItem.isTitle" [class.nk-menu-item]="menuItem.isTitle == false" *ngFor="let menuItem of menu">
+          <h6 class="overline-title text-primary-alt" *ngIf="menuItem.isTitle">{{ menuItem.label }}</h6>
+          <a *ngIf="menuItem.isTitle == false" [href]="menuItem.link" class="nk-menu-link">
+            <span class="nk-menu-icon"><em class="icon ni ni-{{ menuItem.icon }}"></em></span>
+            <span class="nk-menu-text">{{ menuItem.label }}</span><span class="nk-menu-badge">HOT</span>
+          </a>
+        </li>
+      </ul><!-- .nk-menu -->
+    </div><!-- .nk-sidebar-menu -->
+  </div><!-- .nk-sidebar-content -->
+</div>
